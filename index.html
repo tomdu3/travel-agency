@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Travel Agency Landing Page</title>
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <p>Trabook</p>
-          <img src="img/globe.png" alt="Logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel Agency Landing Page</title>
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <p>Trabook</p>
+        <img src="img/globe.png" alt="Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Tour</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <ul class="auth-links">
+        <li><a href="#" id="login">Login</a></li>
+        <li><a href="#" id="signup">Sign up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          Get started your exciting
+          <span class="orange-text">journey</span> with us.
+        </h1>
+        <p>A Team of experienced tourism professionals will provide you with the best advice and tips for your desire
+          place.</p>
+        <button>Discover Now</button>
+      </div>
+      <div class="hero-image">
+        <img src="img/tourist.png" id="hero-img" alt="Hero Image Tourist with thumb up" />
+        <div class="awards icon-group">
+          <img src="img/trophy-icon.png" class="icon" alt="Trophy Icon">
+          <p><span class="bold-title">Best Tour<br />Awards</span></p>
         </div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Destination</a></li>
-          <li><a href="#">Tour</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-        <ul class="auth-links">
-          <li><a href="#" id="login">Login</a></li>
-          <li><a href="#" id="signup">Sign up</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-            <h1>
-              Get started your exciting
-              <span class="orange-text">journey</span> with us.
-            </h1>
-            <p>A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place.</p>
-            <button>Discover Now</button>
+        <div class="explore icon-group">
+          <img src="img/google-maps-icon.png" class="icon" alt="Google Map Icon">
+          <p><span class="bold-title">Explore</span><br />Every corner of the world with us</p>
         </div>
-        <div class="hero-image">
-          <img src="img/tourist.png" id="hero-img" alt="Hero Image Tourist with thumb up" />
-          <div class="awards icon-group">
-            <img src="img/trophy-icon.png" class="icon" alt="Trophy Icon">
-            <p class="bold-title">Best Tour<br />Awards</p>
-          </div>
-          <div class="explore icon-group">
-            <img src="img/google-maps-icon.png" class="icon" alt="Google Map Icon">
-            <p><span class="bold-title">Explore</span><br />Every corner of the world with us</p>
-          </div>
-          <div class="customers icon-group">
-            <img src="img/star-icon.png" class="icon" alt="Star Icon">
-            <p><span class="bold-title">27K</span><br />Customers Reviewed</p>
+        <div class="customers icon-group">
+          <img src="img/star-icon.png" class="icon" alt="Star Icon">
+          <p><span class="bold-title">27K</span><br />Customers Reviewed</p>
         </div>
-      </section>
-      
-    </main>
-  </body>
+    </section>
+    <div class="search-bar">
+      <div>
+        <label for="location">Location <span class="orange-text"><i class="fa-solid fa-angle-down"></i></span></label>
+        <input type="text" id="location" placeholder="Where are you going">
+      </div>
+      <div>
+        <label for="date">Date <span class="orange-text"><i class="fa-solid fa-angle-down"></i></span></label>
+        <input type="text" id="date" placeholder="When will you go">
+      </div>
+      <div>
+        <label for="guests" class="bold-title">Guests <span class="orange-text"><i class="fa-solid fa-angle-down"></i></span></label>
+        <input type="number" id="guests" placeholder="Number of guests">
+      </div>
+      <button>Explore Now</button>
+    </div>
+  </main>
+</body>
+
 </html>

@@ -4,6 +4,8 @@
   --text-orange: #FD8D3A;
   --text-white: #fff;
   --text-dark: #222222;
+  --text-dark-gray: #444444;
+  --text-gray: #666666;
   --bg-white: var(--text-white);
   --bg-orange: #FA7436;
 }
@@ -32,7 +34,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   margin-bottom: 2rem;
 
   * {
@@ -90,24 +92,24 @@ nav {
   gap: 2rem;
 
   .hero-content, .hero-img {
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 48%;
+    max-width: 48%;
   }
 
   .hero-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2.5em;
-    font-size: 1rem;
+    gap: 16px;
+    font-size: 20px;
 
     h1 {
-      font-size: 3rem;
+      font-size: 64px;
     }
 
     p {
       font-size: 1.2rem;
-      color: var(--text-dark);
+      color: var(--text-gray);
     }
 
     button {  
@@ -130,8 +132,9 @@ nav {
   }
 
   .bold-title {
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-dark-gray);
   }
   
   .icon {
@@ -150,15 +153,16 @@ nav {
     padding: 0.5rem;
     background-color: var(--bg-white);
     p {
-      max-width: 170px;
+      max-width: 120px;
       font-size: 12px;
+      color: var(--text-gray);
     }
 
   }
 
   .awards {
-    top: 5rem;
-    left: -2rem;
+    top: 6rem;
+    left: -3rem;
   }
 
   .explore {
@@ -177,3 +181,62 @@ nav {
   color: var(--text-orange);
 }
 
+/* Search Bar */
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  margin: 2rem auto;
+  background-color: var(--bg-white);
+  border-radius: 10px;
+}
+
+.search-bar div {
+  flex: 1;
+  text-align: left;
+}
+
+.search-bar label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.search-bar input,
+.search-bar select {
+  width: 100%;
+  /* height: 40px;
+  line-height: 40px; */
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: var(--para-text);
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+.search-bar button {
+  flex: 0 0 auto;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--bg-orange);
+  color: var(--text-white);
+  font-family: var(--para-text);
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #e66125;
+}
