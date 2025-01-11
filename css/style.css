@@ -1,6 +1,17 @@
+:root {
+  --para-text: Poppins;
+  --heading-text: Volkhov;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--para-text), sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-text), serif;
 }
