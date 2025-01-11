@@ -1,6 +1,11 @@
 :root {
   --para-text: Poppins;
   --heading-text: Volkhov;
+  --text-orange: #FD8D3A;
+  --text-white: #fff;
+  --text-dark: #222222;
+  --bg-white: var(--text-white);
+  --bg-orange: #FA7436;
 }
 
 * {
@@ -14,4 +19,61 @@ h1,
 h2,
 h3 {
   font-family: var(--heading-text), serif;
+}
+
+/* header */
+
+/* navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  * {
+    display: flex;
+  }
+
+  .logo {
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  ul {
+      gap: 2rem;
+      justify-content: space-around;
+      list-style: none;
+      align-items: center;
+
+      li {
+          cursor: pointer;
+          a {
+              text-decoration: none;
+              color: var(--text-dark);
+          }
+      }
+  }
+  .auth-links {
+      justify-content: space-between;
+      gap: 3rem;
+  }
+
+  #login {
+      color: var(--text-orange);
+  }
+
+  #signup {
+    color: var(--text-white);
+    background-color: var(--bg-orange);
+    padding: 1rem 4rem;
+    border-radius: 5px;
+  }
 }
