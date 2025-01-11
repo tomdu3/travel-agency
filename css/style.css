@@ -130,7 +130,8 @@ nav {
   }
 
   .bold-title {
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1rem;
   }
   
   .icon {
@@ -150,6 +151,7 @@ nav {
     background-color: var(--bg-white);
     p {
       max-width: 170px;
+      font-size: 12px;
     }
 
   }
@@ -174,3 +176,4 @@ nav {
 .orange-text {
   color: var(--text-orange);
 }
+
