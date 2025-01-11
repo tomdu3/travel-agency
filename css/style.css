@@ -90,8 +90,8 @@ nav {
   gap: 2rem;
 
   .hero-content, .hero-img {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 40%;
+    max-width: 40%;
   }
 
   .hero-content {
@@ -119,10 +119,34 @@ nav {
       cursor: pointer;
     }
   }
+  .hero-image {
+    position: relative;
 
-  .hero-img img {
+  }
+
+  .hero-image img {
     width: 100%;
     height: auto;
+  }
+
+  .awards {
+    position: absolute;
+    top: 5rem;
+    left: -2rem;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+
+    p {
+      text-align: center;
+    }
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 }
 
