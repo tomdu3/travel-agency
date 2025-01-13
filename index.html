@@ -1,112 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel Agency Landing Page</title>
+    <link href="css/style.css" rel="stylesheet" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Travel Agency Landing Page</title>
-  <link href="css/style.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <p>Trabook</p>
+          <img src="img/globe.png" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">Tour</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <ul class="auth-links">
+          <li><a href="#" id="login">Login</a></li>
+          <li><a href="#" id="signup">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>
+            Get started your exciting
+            <span class="orange-text">journey</span> with us.
+          </h1>
+          <p>
+            A Team of experienced tourism professionals will provide you with
+            the best advice and tips for your desired place.
+          </p>
+          <button>Discover Now</button>
+        </div>
+        <div class="hero-image">
+          <img
+            src="img/tourist.png"
+            id="hero-img"
+            alt="Hero Image Tourist with thumb up"
+          />
+          <div class="awards icon-group">
+            <img src="img/trophy-icon.png" class="icon" alt="Trophy Icon" />
+            <p>
+              <span class="bold-title">Best Tour<br />Awards</span>
+            </p>
+          </div>
+          <div class="explore icon-group">
+            <img
+              src="img/google-maps-icon.png"
+              class="icon"
+              alt="Google Map Icon"
+            />
+            <p>
+              <span class="bold-title">Explore</span><br />Every corner of the
+              world with us
+            </p>
+          </div>
+          <div class="customers icon-group">
+            <img src="img/star-icon.png" class="icon" alt="Star Icon" />
+            <p><span class="bold-title">27K</span><br />Customers Reviewed</p>
+          </div>
+        </div>
+      </section>
+      <div class="search-bar">
+        <div>
+          <label for="location"
+            >Location
+            <span class="orange-text"
+              ><i class="fa-solid fa-angle-down"></i></span
+          ></label>
+          <input type="text" id="location" placeholder="Where are you going" />
+        </div>
+        <div>
+          <label for="date"
+            >Date
+            <span class="orange-text"
+              ><i class="fa-solid fa-angle-down"></i></span
+          ></label>
+          <input type="text" id="date" placeholder="When will you go" />
+        </div>
+        <div>
+          <label for="guests" class="bold-title"
+            >Guests
+            <span class="orange-text"
+              ><i class="fa-solid fa-angle-down"></i></span
+          ></label>
+          <input type="number" id="guests" placeholder="Number of guests" />
+        </div>
+        <button>Explore Now</button>
+      </div>
 
-<body>
-  <header>
-    <nav>
-      <div class="logo">
-        <p>Trabook</p>
-        <img src="img/globe.png" alt="Logo" />
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Destination</a></li>
-        <li><a href="#">Tour</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-      <ul class="auth-links">
-        <li><a href="#" id="login">Login</a></li>
-        <li><a href="#" id="signup">Sign up</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>
-          Get started your exciting
-          <span class="orange-text">journey</span> with us.
-        </h1>
-        <p>A Team of experienced tourism professionals will provide you with the best advice and tips for your desired
-          place.</p>
-        <button>Discover Now</button>
-      </div>
-      <div class="hero-image">
-        <img src="img/tourist.png" id="hero-img" alt="Hero Image Tourist with thumb up" />
-        <div class="awards icon-group">
-          <img src="img/trophy-icon.png" class="icon" alt="Trophy Icon">
-          <p><span class="bold-title">Best Tour<br />Awards</span></p>
+      <!-- Things to do section -->
+      <section class="things-to-do">
+        <h2>Things you need <span class="orange-text">to do</span></h2>
+        <img src="img/airplanes.png" alt="Airplanes" />
+        <p>
+          We ensure that you'll embark on a perfectly planned,<br />
+          safe vacation at a price you can afford.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <div class="icon2"><img src="img/sing-up.png" alt="Sign Up" /></div>
+            <h3>Sign Up</h3>
+            <p>
+              Completes all the work associated with planning and processing
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon2">
+              <img src="img/worth.png" alt="Worth of Money" />
+            </div>
+            <h3>Worth of Money</h3>
+            <p>
+              After successful access then book from exclusive deals & pricing
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon2">
+              <img src="img/exciting.png" alt="Exciting Travel" />
+            </div>
+            <h3>Exciting Travel</h3>
+            <p>Start and explore a wide range of exciting travel experience.</p>
+          </div>
         </div>
-        <div class="explore icon-group">
-          <img src="img/google-maps-icon.png" class="icon" alt="Google Map Icon">
-          <p><span class="bold-title">Explore</span><br />Every corner of the world with us</p>
-        </div>
-        <div class="customers icon-group">
-          <img src="img/star-icon.png" class="icon" alt="Star Icon">
-          <p><span class="bold-title">27K</span><br />Customers Reviewed</p>
-        </div>
-    </section>
-    <div class="search-bar">
-      <div>
-        <label for="location">Location <span class="orange-text"><i class="fa-solid fa-angle-down"></i></span></label>
-        <input type="text" id="location" placeholder="Where are you going">
-      </div>
-      <div>
-        <label for="date">Date <span class="orange-text"><i class="fa-solid fa-angle-down"></i></span></label>
-        <input type="text" id="date" placeholder="When will you go">
-      </div>
-      <div>
-        <label for="guests" class="bold-title">Guests <span class="orange-text"><i class="fa-solid fa-angle-down"></i></span></label>
-        <input type="number" id="guests" placeholder="Number of guests">
-      </div>
-      <button>Explore Now</button>
-    </div>
+      </section>
 
-    <!-- Things to do section -->
-    <section class="things-to-do">
-      <h2>Things you need <span class="orange-text">to do</span></h2>
-      <img src="img/airplanes.png" alt="Airplanes">
-      <p>We ensure that you'll embark on a perfectly planned,<br /> safe vacation at a price you can afford.</p>
-      <div class="cards">
-        <div class="card">
-          <div class="icon2"><img src="img/sing-up.png" alt="Sign Up"></div>
-          <h3>Sign Up</h3>
-          <p>Completes all the work associated with planning and processing</p>
-        </div>
-        <div class="card">
-          <div class="icon2"><img src="img/worth.png" alt="Worth of Money"></div>
-          <h3>Worth of Money</h3>
-          <p>After successful access then book from exclusive deals & pricing</p>
-        </div>
-        <div class="card">
-          <div class="icon2"><img src="img/exciting.png" alt="Exciting Travel"></div>
-          <h3>Exciting Travel</h3>
-          <p>Start and explore a wide range of exciting travel experience.</p>
-        </div>
+      <!-- Deals & Discounts Section -->
+      <section class="deals-discounts">
+        <div class="deals-title">
+        <h2>Exclusive <span class="orange-text">deals & discounts</span></h2>
+        <p>
+          Discover our fantastic early booking discounts<br />& start planning your
+          journey.
+        </p>
       </div>
-    </section>
-    
-  </main>
-</body>
-
+        <div class="cards-carousel">
+          <!-- Madrid Card -->
+          <div class="card2">
+            <img class="card-img" src="img/madrid.png" alt="Madrid" />
+            <div class="card-content">
+              <div class="destination">
+                <h3>Madrid</h3>
+                <div class="destination-rate">
+                  <img src="img/star-icon.png" alt="Star Icon" />
+                  <p>4.8</p>
+                </div>
+              </div>
+              <div class="location-info">
+                <div class="location">
+                  <p>
+                    <img
+                      class="location-icon"
+                      src="img/location-icon.png"
+                      alt="location icon"
+                    />
+                    Spain
+                  </p>
+                </div>
+                <div class="price">
+                  <span class="original-price">$950</span>
+                  <span class="discounted-price">$850</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Firenze Card -->
+          <div class="card2">
+            <button>Book Now</button>
+            <img class="card-img" src="img/firenze.png" alt="Firenze" />
+            <div class="card-content">
+              <div class="destination">
+                <h3>Firenze</h3>
+                <div class="destination-rate">
+                  <img src="img/star-icon.png" alt="Star Icon" />
+                  <p>4.5</p>
+                </div>
+              </div>
+              <div class="location-info">
+                <div class="location">
+                  <p>
+                    <img
+                      class="location-icon"
+                      src="img/location-icon.png"
+                      alt="location icon"
+                    />
+                    Italy
+                  </p>
+                </div>
+                <div class="price">
+                  <span class="original-price">$850</span>
+                  <span class="discounted-price">$750</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Paris Card -->
+          <div class="card2">
+            <img class="card-img" src="img/paris.png" alt="Paris" />
+            <div class="card-content">
+              <div class="destination">
+                <h3>Paris</h3>
+                <div class="destination-rate">
+                  <img src="img/star-icon.png" alt="Star Icon" />
+                  <p>4.4</p>
+                </div>
+              </div>
+              <div class="location-info">
+                <div class="location">
+                  <p>
+                    <img
+                      class="location-icon"
+                      src="img/location-icon.png"
+                      alt="location icon"
+                    />
+                    France
+                  </p>
+                </div>
+                <div class="price">
+                  <span class="original-price">$699</span>
+                  <span class="discounted-price">$599</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- London Card -->
+          <div class="card2">
+            <img class="card-img" src="img/london.png" alt="London" />
+            <div class="card-content">
+              <div class="destination">
+                <h3>London</h3>
+                <div class="destination-rate">
+                  <img src="img/star-icon.png" alt="Star Icon" />
+                  <p>4.8</p>
+                </div>
+              </div>
+              <div class="location-info">
+                <div class="location">
+                  <p>
+                    <img
+                      class="location-icon"
+                      src="img/location-icon.png"
+                      alt="location icon"
+                    />
+                    UK
+                  </p>
+                </div>
+                <div class="price">
+                  <span class="original-price">$850</span>
+                  <span class="discounted-price">$850</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="prev-btn">&larr;</button>
+          <button class="next-btn">&rarr;</button>
+        </div>
+      </section>
+      
+      
+    </main>
+  </body>
 </html>

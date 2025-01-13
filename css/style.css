@@ -6,8 +6,10 @@
   --text-dark: #222222;
   --text-dark-gray: #444444;
   --text-gray: #666666;
+  --text-light-gray: #FEFCFB;
   --bg-white: var(--text-white);
   --bg-orange: #FA7436;
+  --bg-price-discounted: #FFE7DB; 
   --bg-default: #FEFCFB;
 }
 
@@ -25,7 +27,7 @@ h3 {
 
 body {
   background-color: var(--bg-default);
-  padding: 2rem 20%;
+  padding: 2rem 10%;
   font-family: var(--para-text), sans-serif;
 }
 
@@ -244,7 +246,7 @@ nav {
 .search-bar button:hover {
   background-color: #e66125;
 }
-
+ 
 /* Things to do */
 
 .things-to-do {
@@ -324,4 +326,163 @@ nav {
 .icon2 img {
   width: 30px;
   height: 30px;
+}
+
+/* Deal and discounts section */
+
+.deals-discounts {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+.deals-title {
+  margin-bottom: 3rem;
+}
+
+.deals-discounts h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.deals-discounts h2 .orange-text {
+  color: var(--text-orange);
+}
+
+.deals-discounts p {
+  font-size: 1rem;
+  color: var(--text-gray);
+}
+
+.cards-carousel {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  h3 {
+    font-family: var(--para-text);
+    font-weight: 500;
+  }
+}
+
+.card2 {
+  position: relative;
+  background-color: var(--bg-white);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  text-align: left;
+}
+
+.card-img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.location-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: var(--text-dark-gray);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-content {
+  margin-top: 0.5rem;
+}
+
+.card-content .price .original-price {
+  text-decoration: line-through;
+  color: var(--text-gray);
+  margin-right: 0.5rem;
+}
+
+.card-content .price .discounted-price {
+  font-weight: bold;
+  color: var(--text-orange);
+}
+
+.destination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.destination-rate {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.discounted-price {
+  font-weight: bold;
+  background-color: var(--bg-price-discounted);
+}
+
+.card2 button {
+  position: absolute;
+  background-color: var(--bg-orange);
+  color: var(--text-white);
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  top: 40%;
+  left: 30%;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.carousel-controls .prev-btn,
+.carousel-controls .next-btn {
+  border: none;
+  padding: .5rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.carousel-controls .prev-btn {
+  background-color: var(--bg-white);
+  color: var(--text-gray);
+  border: 1px solid var(--text-gray);
+}
+
+.carousel-controls .next-btn {
+  color: var(--text-white);
+  background-color: var(--bg-orange);
 }
