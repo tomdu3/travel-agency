@@ -8,6 +8,7 @@
   --text-gray: #666666;
   --bg-white: var(--text-white);
   --bg-orange: #FA7436;
+  --bg-default: #FEFCFB;
 }
 
 * {
@@ -23,7 +24,7 @@ h3 {
 }
 
 body {
-  background-color: var(--bg-white);
+  background-color: var(--bg-default);
   padding: 2rem 4rem;
   font-family: var(--para-text), sans-serif;
 }
@@ -123,6 +124,7 @@ nav {
   }
   .hero-image {
     position: relative;
+    background-color: var(--bg-white);
 
   }
 
@@ -203,7 +205,7 @@ nav {
 .search-bar label {
   display: block;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 16px;
   color: var(--text-dark);
 }
 
