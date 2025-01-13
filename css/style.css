@@ -25,7 +25,7 @@ h3 {
 
 body {
   background-color: var(--bg-default);
-  padding: 2rem 4rem;
+  padding: 2rem 20%;
   font-family: var(--para-text), sans-serif;
 }
 
@@ -47,6 +47,7 @@ nav {
     align-items: center;
     cursor: pointer;
     font-family: var(--heading-text);
+    font-size: 24px;
     font-weight: 600;
     img {
       width: 1.5rem;
@@ -111,6 +112,7 @@ nav {
     p {
       font-size: 1.2rem;
       color: var(--text-gray);
+      width: 90%;
     }
 
     button {  
@@ -134,7 +136,7 @@ nav {
   }
 
   .bold-title {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     color: var(--text-dark-gray);
   }
