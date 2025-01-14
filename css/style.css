@@ -251,7 +251,7 @@ nav {
 
 .things-to-do {
   text-align: center;
-  margin: 6rem auto;
+  margin: 6rem 0;
   padding-top: 6rem;
   position: relative;
 }
@@ -289,7 +289,7 @@ nav {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
-  width: 300px;
+  width: 370px;
   text-align: left;
   transition: transform 0.3s, box-shadow 0.3s;
 }
