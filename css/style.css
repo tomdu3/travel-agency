@@ -260,10 +260,10 @@ nav {
   text-align: center;
   margin: 6rem 0;
   padding-top: 6rem;
-  position: relative;
 }
 
 .things-to-do h2 {
+  position: relative;
   font-size: 48px;
   color: var(--text-dark);
   margin-bottom: 1rem;
@@ -279,12 +279,11 @@ nav {
   margin: 0 auto 2rem auto;
 }
 
-.things-to-do > img {
+.things-to-do h2 > img {
+  /* airplane */
   /* width: 100%;
   height: auto; */
   position: absolute;
-  top: 100px;
-  right: 50px;
 }
 
 .cards {
@@ -316,12 +315,14 @@ nav {
   text-align: left;
   margin: 1rem 0;
   color: var(--text-dark);
+  padding: 2rem 0 1rem 0;
 }
 
 .card p {
   font-size: 0.9rem;
   color: var(--text-gray);
   line-height: 1.5;
+  padding-bottom: 1rem;
 }
 
 .icon2 {
@@ -383,6 +384,7 @@ nav {
 
   .card-img {
     width: 100%;
+    height: 250px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
@@ -427,7 +429,7 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 1rem;
-    top: 40%;
+    top: 35%;
     left: 30%;
   }
 }
@@ -509,11 +511,18 @@ nav {
 }
 
 .vacation-plan h2 {
+  position: relative;
   font-size: 2.8rem;
   margin-bottom: 1rem;
 }
 
-.vacation-plan>p {
+.vacation-plan h2 > img {
+  position: absolute;
+  top: 0;
+  padding-left: 100px;
+}
+
+.vacation-plan > p {
   font-size: 1.1rem;
   color: var(--text-gray);
   margin-bottom: 2.5rem;
@@ -523,7 +532,7 @@ nav {
   background-color: var(--bg-white);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 370px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -535,7 +544,7 @@ nav {
 
 .card-img {
   width: 100%;
-  height: 180px;
+  height: 327px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
