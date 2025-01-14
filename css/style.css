@@ -11,6 +11,7 @@
   --bg-orange: #fa7436;
   --bg-price-discounted: #ffe7db;
   --bg-default: #fefcfb;
+  --bg-section: #F7F8FC;
 }
 
 * {
@@ -38,6 +39,9 @@ body {
   }
 }
 
+.alternative-section {
+  background-color: var(--bg-section);
+}
 /* navbar */
 
 nav {
@@ -596,4 +600,100 @@ nav {
   gap: 0.3rem;
   font-size: 1rem;
   color: var(--text-dark);
+}
+
+/* About us */
+/* 
+.about-us {
+  display: flex;
+
+  .carousel-controls {
+    justify-content: flex-start;
+  }
+}
+
+.about-us > div {
+  width: 50%;
+} */
+
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 200px;
+  background-color: var(--bg-section);
+  position: relative;
+}
+
+.about-us img {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 150px;
+  opacity: 0.5;
+}
+
+.people-say {
+  width: 50%;
+  text-align: left;
+}
+
+.people-say h2 {
+  font-size: 2.8rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.people-say p {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.carousel-controls {
+  justify-content: flex-start;
+}
+
+.testimonial {
+  width: 45%;
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+}
+
+.testimonials {
+  width: 80%;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-white);
+
+}
+.testimonials img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  border: 3px solid var(--bg-white);
+}
+
+.testimonials p {
+  font-size: 1rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--text-dark-gray);
+}
+
+.author-detail {
+  font-size: 0.9rem;
+  color: var(--text-gray);
 }
