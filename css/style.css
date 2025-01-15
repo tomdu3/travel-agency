@@ -12,6 +12,7 @@
   --bg-price-discounted: #ffe7db;
   --bg-default: #fefcfb;
   --bg-section: #F7F8FC;
+  --dot-gray: #E5E5E5;
 }
 
 * {
@@ -664,7 +665,7 @@ nav {
 .testimonials {
   width: 45%;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 5rem 2rem;
   position: relative;
 }
 
@@ -727,4 +728,87 @@ nav {
   z-index: 1; 
   opacity: 0.9;
   background-color: var(--bg-section);
+}
+
+/* Blog Section */
+
+/* Latest Blog Section */
+.latest-blog {
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.latest-blog h2 {
+  font-size: 48px;
+  margin-bottom: 4rem;
+  color: var(--text-dark);
+}
+
+
+.latest-blog-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.blog-card {
+  /* background-color: var(--bg-white); */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: calc(25% - 2rem); /* Adjusts width dynamically */
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blog-card-content {
+  padding: 1rem;
+}
+
+.blog-card-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--para-text);
+  color: var(--text-dark);
+  margin: 0.5rem 0;
+}
+
+.blog-card-content .date {
+  font-size: 16px;
+  color: var(--text-gray);
+}
+
+.three-dots {
+  justify-content: center;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust this value to match the spacing between dots */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--dot-gray);
+}
+
+.orange-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color:var(--text-orange);
 }
