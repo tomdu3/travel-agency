@@ -370,6 +370,11 @@ nav {
     font-size: 1rem;
     color: var(--text-gray);
   }
+
+  carousel-control {
+    justify-content: center;
+  }
+
 }
 
 .cards-carousel {
@@ -482,7 +487,6 @@ nav {
 
 .carousel-controls {
   display: flex;
-  justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
 }
