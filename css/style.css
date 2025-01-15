@@ -631,10 +631,9 @@ nav {
 
 .about-us img {
   position: absolute;
-  top: 20%;
-  right: 5%;
+  top: -10px;
+  right:100px;
   width: 150px;
-  opacity: 0.5;
 }
 
 .people-say {
@@ -660,44 +659,70 @@ nav {
   justify-content: flex-start;
 }
 
-.testimonial {
+/* Testimonials */
+
+.testimonials {
   width: 45%;
   border-radius: 10px;
   padding: 2rem;
   position: relative;
 }
 
-.testimonials {
-  width: 80%;
-  border: 1px solid black;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.testimonial {
+  width: 504px;
+  height: 245px;
+  border-radius: 10px;
+  padding: 16px 32px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   background-color: var(--bg-white);
-
 }
-.testimonials img {
-  width: 60px;
-  height: 60px;
+
+.testimonial img {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   position: absolute;
   top: -30px;
   left: -30px;
   border: 3px solid var(--bg-white);
+  background-color: var(--bg-white);
+  z-index: 3;
 }
 
-.testimonials p {
-  font-size: 1rem;
+.testimonial p {
+  font-size: 16px;
   color: var(--text-dark);
-  line-height: 1.5;
+  line-height: 2;
   margin-top: 2rem;
+  width: 400px;
+}
+
+.author-info {
+  margin-top: 32px;
+  line-height: normal;
 }
 
 .author {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 18px;
   color: var(--text-dark-gray);
 }
 
 .author-detail {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: var(--text-gray);
+}
+
+.top {
+  z-index: 2;
+  position: relative;
+}
+
+.tone-down {
+  top: 105px;
+  right: 0;
+  position: absolute;
+  z-index: 1; 
+  opacity: 0.9;
+  background-color: var(--bg-section);
 }
