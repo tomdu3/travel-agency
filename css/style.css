@@ -609,10 +609,14 @@ nav {
 }
 
 /* About us */
-/* 
+
 .about-us {
   display: flex;
-
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 200px;
+  position: relative;
+  background-color: var(--bg-section);
   .carousel-controls {
     justify-content: flex-start;
   }
@@ -620,26 +624,17 @@ nav {
 
 .about-us > div {
   width: 50%;
-} */
-
-.about-us {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4rem 200px;
-  background-color: var(--bg-section);
-  position: relative;
 }
 
 .about-us img {
   position: absolute;
-  top: -10px;
-  right:100px;
+  top: 50px;;
+  right:200px;
   width: 150px;
 }
 
 .people-say {
-  width: 50%;
+  width: 500px;
   text-align: left;
 }
 
@@ -664,10 +659,9 @@ nav {
 /* Testimonials */
 
 .testimonials {
-  width: 45%;
+  width: 850%;
   border-radius: 10px;
   padding: 5rem 2rem;
-  position: relative;
 }
 
 .testimonial {
@@ -678,18 +672,23 @@ nav {
   padding: 16px 32px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   background-color: var(--bg-white);
+  /* position: relative; */
 }
 
+.testimonial-cards {
+  position: relative;
+  z-index: 0;
+}
 .testimonial img {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   position: absolute;
   top: -30px;
-  left: -30px;
+  left: -40px;
   border: 3px solid var(--bg-white);
   background-color: var(--bg-white);
-  z-index: 3;
+  z-index: 4;
 }
 
 .testimonial p {
@@ -718,17 +717,22 @@ nav {
 }
 
 .top {
-  z-index: 2;
-  position: relative;
+  z-index: 3;
+  margin-top: 40px;
 }
 
 .tone-down {
-  top: 155px;
-  right: -20px;
+  top: 75px;
+  left: 50px;
   position: absolute;
-  z-index: 1; 
-  opacity: 0.9;
+  z-index: -1; 
   background-color: var(--bg-section);
+  p {
+    color: var(--bg-section);
+  }
+  span {
+    opacity: 0.5;
+  }
 }
 
 /* Blog Section */
@@ -751,16 +755,15 @@ nav {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 .blog-card {
-  /* background-color: var(--bg-white); */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: transform 0.3s, box-shadow 0.3s;
-  width: calc(25% - 2rem); /* Adjusts width dynamically */
+  width: calc(25% - 2rem); 
 }
 
 .blog-card:hover {
@@ -818,12 +821,14 @@ nav {
 
 /* Subscribe Section */
 .subscribe-section {
+  height: 416px;
+  width: 1170px;
   background-color: var(--bg-orange);
   color: var(--text-white);
   text-align: center;
   padding: 4rem 2rem;
   border-radius: 15px;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem auto;
   position: relative;
   z-index: 0;
 
