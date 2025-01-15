@@ -35,7 +35,7 @@ body {
 .section-wrapper {
   margin: 0;
 
-  nav, section {
+  nav, section, footer {
     padding: 2rem 200px;
   }
 }
@@ -50,7 +50,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 
   * {
     display: flex;
@@ -812,3 +812,7 @@ nav {
   border-radius: 50%;
   background-color:var(--text-orange);
 }
+
+/* TODO: Footer */
+
+
