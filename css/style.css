@@ -670,7 +670,8 @@ nav {
 
 .testimonial {
   width: 504px;
-  height: 245px;
+  min-height: 245px;
+  height: auto;
   border-radius: 10px;
   padding: 16px 32px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
@@ -694,7 +695,8 @@ nav {
   color: var(--text-dark);
   line-height: 2;
   margin-top: 2rem;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .author-info {
