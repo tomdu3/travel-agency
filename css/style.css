@@ -1241,4 +1241,25 @@ hr {
     }
   }
 
+  /* Blog */
+  .section-wrapper {
+    padding: 2rem;
+    margin: 0;
+    .latest-blog-container {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+      .blog-card {
+        width: 90%;
+        margin: 1rem 0;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
 }
