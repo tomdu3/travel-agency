@@ -57,19 +57,6 @@ nav {
     display: flex;
   }
 
-  .logo {
-    gap: 0.5rem;
-    align-items: center;
-    cursor: pointer;
-    font-family: var(--heading-text);
-    font-size: 24px;
-    font-weight: 600;
-    img {
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-  }
-
   ul {
     gap: 2rem;
     justify-content: space-around;
@@ -98,6 +85,20 @@ nav {
     background-color: var(--bg-orange);
     padding: 1rem 4rem;
     border-radius: 5px;
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  font-family: var(--heading-text);
+  font-size: 24px;
+  font-weight: 600;
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 
@@ -922,4 +923,13 @@ nav {
 .subscribe-form button:hover {
   background-color: #fff;
   color: var(--text-orange)
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8rem auto 4rem auto;
+  padding: 10rem 2rem;
 }
