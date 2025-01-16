@@ -876,7 +876,7 @@ nav {
 
 .subscribe-form {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   max-width: 675px;
@@ -888,8 +888,13 @@ nav {
   position: relative;
   z-index: 2;
 
-  i {
-    padding-left: 2rem;
+  .input-field {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    i {
+      padding-left: 2rem;
+    }
   }
 }
 
@@ -1223,7 +1228,6 @@ hr {
     margin: 0;
     margin-bottom: 5rem;
 
-
     .people-say {
       width: 80%;
       justify-content: center;
@@ -1241,7 +1245,7 @@ hr {
       width: 80%;
 
       .testimonial {
-        width: 100%;;
+        width: 100%;
       }
 
       .tone-down {
@@ -1253,29 +1257,94 @@ hr {
 
   /* Blog */
 
-  .section-wrapper .latest-blog {
-    padding: 2rem;
-    margin: 0;
-    h2 {
-      font-size: 2.8rem;
-    }
-    .latest-blog-container {
-      flex-direction: column;
-      align-items: center;
+  .latest-blog-wrapper {
+    padding-bottom: 3rem;
+
+    .latest-blog {
+      padding: 2rem 1rem 0 1rem;
       margin: 0;
-      padding: 0;
-
-      .blog-card {
-        width: 90%;
-        margin: 1rem 0;
-
-        img {
-          width: 100%;
-          height: auto;
+      h2 {
+        font-size: 2.8rem;
+      }
+      .latest-blog-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+  
+        .blog-card {
+          width: 90%;
+          margin: 1rem 0;
+  
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }
   }
 
+  /* Footer */
 
+  /* Subscribe Section */
+
+  .subscribe-section {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    .subscribe-content {
+      position: static;
+      width: 100%;
+      text-align: center;
+      padding: 0 0 5rem 0;
+      margin: 0;
+
+      #elipses {
+        display: none;
+      }
+
+      --height: auto;
+
+      h2 {
+        font-size: 2rem;
+        line-height: normal;
+      }
+
+      .subscribe-form {
+        width: 25%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .input-field {
+          padding-top: 1rem;
+          justify-content: center;
+          input {
+            width: 100%;
+          }
+        }
+      }
+
+      #subscribe-btn {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .footer-content {
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0;
+
+    h3, h4 {
+      font-size: 1.2rem;
+    }
+  }
 }
