@@ -738,10 +738,15 @@ nav {
 /* Blog Section */
 
 /* Latest Blog Section */
+
+.latest-blog-wrapper {
+  padding-bottom: 10rem;
+}
+
 .latest-blog {
   text-align: center;
   margin: 4rem auto;
-  padding: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
 }
 
 .latest-blog h2 {
@@ -821,15 +826,24 @@ nav {
 
 /* Subscribe Section */
 .subscribe-section {
-  height: 416px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+.subscribe-content {
+  --height: 416px;
+  height: var(--height);
+  top: -375px;
   width: 1170px;
   background-color: var(--bg-orange);
   color: var(--text-white);
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 4rem auto;
   border-radius: 15px;
-  margin: 0 auto 3rem auto;
-  position: relative;
+  margin: 10rem 0;
+  position: absolute;
   z-index: 0;
 
   img {
@@ -848,13 +862,13 @@ nav {
     overflow: hidden;
     z-index: 0;
   }
-
 }
 
 .subscribe-section h2 {
   font-family: var(--heading-text), serif;
   font-size: 2rem;
   font-weight: bold;
+  margin-top: 5rem;
   margin-bottom: 2rem;
   line-height: 1.5;
 }
@@ -866,7 +880,7 @@ nav {
   gap: 1rem;
   max-width: 675px;
   min-height: 70px;
-  margin: 0 auto;
+  margin: 5rem auto 0 auto;
   background-color: white;
   border-radius: 10px;
   color: var(--text-darkish-gray);
