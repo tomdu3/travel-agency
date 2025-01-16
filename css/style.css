@@ -1192,5 +1192,21 @@ hr {
     }
   }
 
+  /* Vacation Plan */
+
+  .vacation-plan {
+    .cards-carousel {
+      padding-top: 0;
+      padding-bottom: 0;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 5rem;
+    }
+
+    .card3 {
+      width: 80%;
+    }
+  }
+
   
 }
