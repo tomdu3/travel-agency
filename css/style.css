@@ -1027,3 +1027,50 @@ hr {
     }
   }
 }
+
+/* Media queries */
+
+/* Small devices (landscape phones, up to 576px) */
+
+@media (max-width: 576px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .section-wrapper {
+    nav, section, footer {
+      padding: 0;
+    }
+  }
+
+  /* Navbar */
+
+  .logo {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  nav {
+    font-size: 12px;
+    flex-direction: column;
+
+    .auth-links {
+      padding-top: 1rem;
+      gap: .5rem;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 90%;
+      #login, #signup {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+      }
+    }
+  }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+/* Large devices (desktops, 992px and up) */
