@@ -663,7 +663,7 @@ nav {
 /* Testimonials */
 
 .testimonials {
-  width: 850%;
+  width: 85%;
   border-radius: 10px;
   padding: 5rem 2rem;
 }
@@ -1405,5 +1405,57 @@ hr {
     & * {
       text-align: center;
     }
+  }
+}
+
+/* Medium Screens */
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .section-wrapper {
+    nav,
+    section,
+    footer {
+      padding: 4rem 3rem;
+      margin: 0 auto;
+    }
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+  
+  .about-us {
+
+    .testimonial {
+      width: 300px;
+    }
+
+    img {
+      right: 0;
+    }
+  }
+
+  .latest-blog-container {
+    .blog-card {
+      width: 150px;
+    }
+
+    .blog-card img {
+        width: 150px;
+        height: 150px;
+    }
+  }
+
+  .subscribe-content {
+    min-width: 90%;
+
+    .subscribe-form {
+      max-width: 90%;
+    }
+
   }
 }
