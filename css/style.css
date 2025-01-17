@@ -1173,14 +1173,17 @@ hr {
       display: none;
     }
     .cards {
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
       padding-bottom: 2rem;
+      gap: 2.5rem;
     }
     .card {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 80%;
+      width: 90%;
     }
   }
 
@@ -1380,6 +1383,11 @@ hr {
       p {
         width: 100%;
       }
+    }
+    
+    .links-container {
+      width: 90%;
+      gap: 1rem;
     }
 
     .links-container .links {
