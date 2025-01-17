@@ -1427,7 +1427,7 @@ hr {
   .search-bar {
     width: 90%;
   }
-  
+
   .about-us {
 
     .testimonial {
@@ -1456,6 +1456,12 @@ hr {
     .subscribe-form {
       max-width: 90%;
     }
+  }
 
+  .links {
+    li {
+      line-height: normal;
+      padding-bottom: .5rem;
+    }
   }
 }
