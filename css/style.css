@@ -1343,13 +1343,54 @@ hr {
     }
   }
 
+  /* Footer Content */
   .footer-content {
     gap: 1rem;
-    padding: 1rem;
+    padding: 2rem 0 0 2rem;
     margin: 0;
+    width: 90%;
+    justify-content: space-evenly;
+
+    .logo {
+      width: 70%;
+      padding-left: 0;
+    }
+    .footer-section {
+      p {
+        width: 100%;
+      }
+    }
+
+    .links {
+      li {
+        text-align: center;
+        line-height: normal;
+        padding-bottom: .5rem;
+      }
+    } 
 
     h3, h4 {
       font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .icons {
+      gap: 0.5rem;
+      i {
+        padding: 10px;
+         font-size: 10px;
+      }
+    }
+  }
+  .footer-bottom {
+    width: 100%;
+    font-size: 12px;
+    gap: 2rem;
+    padding: 1rem;
+    margin-left: 0;
+    justify-content: center;
+    & * {
+      text-align: center;
     }
   }
 }
