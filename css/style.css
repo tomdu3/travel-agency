@@ -1228,6 +1228,11 @@ hr {
     margin: 0;
     margin-bottom: 5rem;
 
+    img {
+      top: 0px;
+      right: 10px;
+    }
+
     .people-say {
       width: 80%;
       justify-content: center;
