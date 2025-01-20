@@ -317,7 +317,9 @@ nav {
   padding: 1.5rem;
   width: 350px;
   text-align: left;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .card:hover {
@@ -555,7 +557,9 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 370px;
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card3:hover {
@@ -770,7 +774,9 @@ nav {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   width: 180px;
 }
 
@@ -971,7 +977,7 @@ footer {
   justify-content: space-between;
 }
 
- .links {
+.links {
   h4 {
     padding-bottom: 1.5rem;
     font-size: 18px;
@@ -1052,6 +1058,8 @@ hr {
   }
 
   .section-wrapper {
+    overflow-x: hidden;
+
     nav,
     section,
     footer {
@@ -1385,7 +1393,7 @@ hr {
         width: 100%;
       }
     }
-    
+
     .social-icons {
       justify-content: center;
     }
@@ -1451,7 +1459,6 @@ hr {
   }
 
   .about-us {
-
     .testimonial {
       width: 300px;
     }
@@ -1467,8 +1474,8 @@ hr {
     }
 
     .blog-card img {
-        width: 150px;
-        height: 150px;
+      width: 150px;
+      height: 150px;
     }
   }
 
