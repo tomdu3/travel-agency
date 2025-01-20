@@ -422,7 +422,6 @@ nav {
     }
 
     p {
-      font-size: 16px;
       color: var(--text-dark-gray);
       display: flex;
       align-items: center;
@@ -603,7 +602,7 @@ nav {
 }
 
 .price {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--text-orange);
 }
